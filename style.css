@@ -1,0 +1,317 @@
+:root {
+    --nav_panel_width: 23vw;
+    --right_padding: 4.6vw;
+    --left_padding: 1.1vw;
+}
+
+body::-webkit-scrollbar {
+    width: 0.8vw;
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #cf0204;
+    border-radius: 0.4vw;
+    border: 0.12vw solid #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #fbfbfb;
+    font-size: 22px;
+}
+
+h1 {
+    font-family: Lora;
+}
+
+h2 {
+    font-family: Lora;
+}
+
+h3 {
+    font-family: Lora;
+}
+
+p {
+    font-family: Lora;
+    margin-bottom: 1.5em;
+}
+
+li {
+    font-family: Lora;
+    color: #cf0204;
+}
+
+li span {
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.right_side {
+    width: var(--nav_panel_width);
+    height: 100%;
+    position: fixed;
+}
+
+.nav_panel {
+    width: 75%;
+    height: 95%;
+    padding: 0 8%;
+    margin: var(--left_padding) 20%;
+    border-radius: 1em;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px #ddd solid;
+}
+
+.nav_link {
+    width: 100%;
+    color: #cf0204;
+    padding: 0.3em 1em;
+    line-height: 1.2em;
+    border-radius: 0.5em;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.nav_link:hover {
+    background-color: #ffdfdf;
+}
+
+.main_area {
+    margin-left: var(--nav_panel_width);
+    padding: var(--left_padding) var(--left_padding);
+}
+
+.content_area {
+    margin-right: var(--right_padding);
+    border-radius: 1em;
+    background-color: #fff;
+    padding: 1em 18%;
+    border: 1px #ddd solid;
+}
+
+.logo1 {
+    width: 40%;
+    margin: 1em 30%;
+}
+
+.title1 {
+    font-family: Arsenal SC;
+    font-size: 3.6em;
+    line-height: 0.8em;
+    color: #cf0204;
+}
+
+.subtitle1 {
+    font-family: Arsenal SC;
+    font-size: 1em;
+    color: #cf0204;
+}
+
+.signature {
+    font-family: Lora;
+    font-size: 0.8em;
+    color: #777;
+}
+
+.red_signature {
+    font-family: Lora;
+    font-size: 0.8em;
+    color: #cf0204;
+}
+
+.red_h1 {
+    font-family: Lora;
+    line-height: 0;
+    color: #cf0204;
+}
+
+.picture {
+    max-width: 100%;
+}
+
+.small_picture {
+    min-width: 30%;
+    max-width: 100%;
+}
+
+.donation_area {
+    border: 1px #ddd solid;
+    border-radius: 1em;
+    padding: 2em 8%;
+}
+
+.help_button {
+    font-size: 1em;
+    margin: auto;
+    border: 0;
+    padding: 1em 4em;
+    color: #fff;
+    background-color: #cf0204;
+    border-radius: 1em;
+}
+
+.pay {
+    height: 0;
+    line-height: 0.8em;
+    visibility: hidden;
+    margin: auto;
+    width: 70%;
+    border-radius: 1em;
+    background-color: #fcfcfc;
+    color: #666;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+@media (min-width: 3830px) {
+    body {
+        font-size: 43px;
+    }
+
+    .nav_panel {
+        padding: 0 7%;
+    }
+}
+
+@media (min-width: 2550px) {
+    body {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1600px) {
+    body {
+        font-size: 18px;
+    }
+
+    .nav_panel {
+        padding: 0 4%;
+    }
+
+    .nav_link {
+        padding: 0.3em 0.8em;
+    }
+
+    .content_area {
+        padding: 1em 15%;
+    }
+}
+
+@media (max-width: 1300px) {
+    body {
+        font-size: 14px;
+    }
+
+    :root {
+        --right_padding: 4vw;
+    }
+
+    .nav_panel {
+        padding: 0 3%;
+    }
+
+    .nav_link {
+        padding: 0.3em 0.7em;
+    }
+
+    .content_area {
+        padding: 1em 12%;
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        font-size: 11px;
+    }
+
+    :root {
+        --nav_panel_width: 25vw;
+        --right_padding: 4vw;
+    }
+
+    .content_area {
+        padding: 1em 11%;
+    }
+}
+
+@media (max-width: 760px) {
+    body {
+        font-size: 10px;
+    }
+
+    :root {
+        --nav_panel_width: 27vw;
+        --right_padding: 3.5vw;
+    }
+
+    .nav_panel {
+        width: 80%;
+        margin: var(--left_padding) 15%;
+    }
+
+    .signature {
+        font-size: 0.68em;
+    }
+
+    .content_area {
+        padding: 1em 10%;
+    }
+}
+
+@media (max-width: 560px) {
+    body {
+        font-size: 8px;
+    }
+
+    :root {
+        --nav_panel_width: 32vw;
+        --right_padding: 2vw;
+    }
+
+    .nav_panel {
+        width: 85%;
+        margin: var(--left_padding) 10%;
+    }
+
+    .content_area {
+        padding: 1em 8%;
+    }
+}
+
+@media (max-width: 460px) {
+    body {
+        font-size: 7px;
+    }
+
+    .signature {
+        font-size: 0.6em;
+    }
+
+    .content_area {
+        padding: 1em 6%;
+    }
+}
+
+@media (max-width: 380px) {
+    body {
+        font-size: 5.5px;
+    }
+
+    .signature {
+        font-size: 0.55em;
+    }
+}
